@@ -52,8 +52,8 @@ steps:
   depends_on:
     - build and push to private registry
     - build and push to docker hub
-# trigger:
-#   event:
-#   - cron
-#   cron:
-#   - build_monthly
+trigger:
+  event:
+  - cron
+  cron:
+  - build_monthly
