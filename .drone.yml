@@ -19,7 +19,6 @@ steps:
     password:
       from_secret: registry_password
     tags: latest
-    auto_tag_suffix: test
     custom_dns: 192.168.2.1
 
 - name: build and push to docker hub
@@ -35,7 +34,6 @@ steps:
     password:
       from_secret: dockerhub_password
     tags: latest
-    auto_tag_suffix: test
 
 - name: discord notification
   image: appleboy/drone-discord
